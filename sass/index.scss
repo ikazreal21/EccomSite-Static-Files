@@ -1,28 +1,29 @@
+$primary1: #fef9ef;
+$primary2: #5e6472;
+$secondary: #ffcb77;
+$accent1: #fe6d73;
+$accent2: #227c9d;
+$accent3: #17c3b2;
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
+
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-  background-color: #5e6472;
+  background-color: $primary2;
   width: 90%;
   margin: auto;
   font-family: "Poppins", "sans-serif";
 }
 
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 1rem;
 }
 
@@ -34,7 +35,7 @@ html {
 }
 
 .nav-links a:hover {
-  color: #ffcb77;
+  color: $secondary;
 }
 
 a {
@@ -43,7 +44,7 @@ a {
 }
 
 p {
-  color: #fef9ef;
+  color: $primary1;
 }
 
 .footer {
@@ -53,10 +54,9 @@ p {
   width: 100%;
   height: 2rem;
   text-align: center;
-  background-color: #227c9d;
+  background-color: $accent2;
 }
 
 .footer p {
   padding: 0.2rem;
 }
-/*# sourceMappingURL=index.css.map */

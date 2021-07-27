@@ -1,8 +1,15 @@
-$primary1: #fef9ef;
-$primary2: #5e6472;
-$secondary: #ffcb77;
+// $primary1: #fef9ef;
+// $primary2: #5e6472;
+// $secondary: #ffcb77;
+// $accent1: #fe6d73;
+// $accent2: #227c9d;
+// $accent3: #17c3b2;
+
+$primary1: #5e6472;
+$primary2: #fef9ef;
+$secondary: #227c9d;
 $accent1: #fe6d73;
-$accent2: #227c9d;
+$accent2: #ffcb77;
 $accent3: #17c3b2;
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
@@ -15,16 +22,30 @@ $accent3: #17c3b2;
 
 html {
   background-color: $primary2;
+  height: relative;
+  font-family: "Poppins", "sans-serif";
+}
+
+body {
+  width: 100%;
+  margin: auto;
+}
+
+header {
   width: 90%;
   margin: auto;
-  font-family: "Poppins", "sans-serif";
+}
+
+section {
+  width: 90%;
+  margin: auto;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .nav-links a {
@@ -38,20 +59,74 @@ html {
   color: $secondary;
 }
 
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 9.5rem 0 12rem 0;
+}
+
+.section {
+  width: 30rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.section p {
+  margin-bottom: 2rem;
+  font-size: 20px;
+  text-align: center;
+  color: $secondary;
+}
+
+.section a {
+  text-align: center;
+  background: $accent1;
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 0 10rem 0 10rem;
+}
+
+.img-container {
+  width: 40%;
+  height: 25rem;
+  box-shadow: 0px 10px rgba(128, 128, 128, 0.281);
+  border-radius: 6px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+}
+
 a {
   text-decoration: none;
-  color: #fef9ef;
+  color: $primary1;
 }
 
 p {
   color: $primary1;
 }
 
+.btn {
+  background: $accent1;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.btn-hover:hover {
+  color: $secondary;
+  background: rgba(254, 109, 114, 0.788);
+}
+
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  // left: 0;
+  // bottom: 0;
+  // width: 100%;
+  // clear: both;
+  position: sticky;
+  height: 100px;
+  top: calc(100vh - 100px);
   height: 2rem;
   text-align: center;
   background-color: $accent2;
@@ -59,4 +134,17 @@ p {
 
 .footer p {
   padding: 0.2rem;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4e4e4e;
+  border-radius: 10px;
 }

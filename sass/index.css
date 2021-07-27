@@ -7,10 +7,24 @@
 }
 
 html {
-  background-color: #5e6472;
+  background-color: #fef9ef;
+  height: relative;
+  font-family: "Poppins", "sans-serif";
+}
+
+body {
+  width: 100%;
+  margin: auto;
+}
+
+header {
   width: 90%;
   margin: auto;
-  font-family: "Poppins", "sans-serif";
+}
+
+section {
+  width: 90%;
+  margin: auto;
 }
 
 .navbar {
@@ -23,7 +37,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .nav-links a {
@@ -34,29 +48,104 @@ html {
 }
 
 .nav-links a:hover {
-  color: #ffcb77;
+  color: #227c9d;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 9.5rem 0 12rem 0;
+}
+
+.section {
+  width: 30rem;
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section p {
+  margin-bottom: 2rem;
+  font-size: 20px;
+  text-align: center;
+  color: #227c9d;
+}
+
+.section a {
+  text-align: center;
+  background: #fe6d73;
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 0 10rem 0 10rem;
+}
+
+.img-container {
+  width: 40%;
+  height: 25rem;
+  -webkit-box-shadow: 0px 10px rgba(128, 128, 128, 0.281);
+          box-shadow: 0px 10px rgba(128, 128, 128, 0.281);
+  border-radius: 6px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
 }
 
 a {
   text-decoration: none;
-  color: #fef9ef;
+  color: #5e6472;
 }
 
 p {
-  color: #fef9ef;
+  color: #5e6472;
+}
+
+.btn {
+  background: #fe6d73;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.btn-hover:hover {
+  color: #227c9d;
+  background: rgba(254, 109, 114, 0.788);
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 100px;
+  top: calc(100vh - 100px);
   height: 2rem;
   text-align: center;
-  background-color: #227c9d;
+  background-color: #ffcb77;
 }
 
 .footer p {
   padding: 0.2rem;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4e4e4e;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=index.css.map */

@@ -20,12 +20,12 @@ $accent3: #17c3b2;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
 }
 
 html {
   background-color: $primary2;
   height: relative;
-  font-family: "Poppins", "sans-serif";
 }
 
 body {
@@ -60,6 +60,8 @@ section {
 .nav-links a:hover {
   color: $secondary;
 }
+
+// FrontPage
 
 .container {
   display: flex;
@@ -136,6 +138,77 @@ p {
 
 .footer p {
   padding: 0.2rem;
+}
+
+// Login Page
+.card-login {
+  height: relative;
+  width: 40%;
+  margin: auto;
+  border-radius: 12px;
+  background: $secondary;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-login h1 {
+  font-weight: bold;
+  font-size: 30px;
+  color: $accent2;
+  text-align: center;
+}
+
+.card-login p {
+  color: black;
+}
+
+.card-login a{
+  color: $accent3;
+  text-decoration: underline;
+}
+
+.card-login .button {
+  color: $primary2;
+  background-color: $accent1;
+  margin: 52px 0 1rem 0;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 124px;
+}
+
+.login-input {
+  width: 80%;
+  margin: auto;
+}
+
+.username input[type="text"],
+.password input[type="password"] {
+  height: 35px;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  padding: 5px;
+  background: $primary2;
+}
+
+.username label,
+.password label {
+  color: $accent2;
+  padding: 1rem 0 1rem 0;
+  text-align: left;
+}
+
+.username,
+.password {
+  display: flex;
+  flex-direction: column;
+}
+.card-wrapper {
+  margin-top: 6rem;
 }
 
 ::-webkit-scrollbar {

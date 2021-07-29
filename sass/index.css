@@ -4,12 +4,12 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
 }
 
 html {
   background-color: #fef9ef;
   height: relative;
-  font-family: "Poppins", "sans-serif";
 }
 
 body {
@@ -134,6 +134,83 @@ p {
   padding: 0.2rem;
 }
 
+.card-login {
+  height: relative;
+  width: 40%;
+  margin: auto;
+  border-radius: 12px;
+  background: #227c9d;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-login h1 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #ffcb77;
+  text-align: center;
+}
+
+.card-login p {
+  color: black;
+}
+
+.card-login a {
+  color: #17c3b2;
+  text-decoration: underline;
+}
+
+.card-login .button {
+  color: #fef9ef;
+  background-color: #fe6d73;
+  margin: 52px 0 1rem 0;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 124px;
+}
+
+.login-input {
+  width: 80%;
+  margin: auto;
+}
+
+.username input[type="text"],
+.password input[type="password"] {
+  height: 35px;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
+  background: #fef9ef;
+}
+
+.username label,
+.password label {
+  color: #ffcb77;
+  padding: 1rem 0 1rem 0;
+  text-align: left;
+}
+
+.username,
+.password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-wrapper {
+  margin-top: 6rem;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -145,7 +222,7 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #1a1717;
+  background-color: #4e4e4e;
   border-radius: 10px;
 }
 /*# sourceMappingURL=index.css.map */

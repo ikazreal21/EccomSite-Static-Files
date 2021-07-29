@@ -136,7 +136,7 @@ p {
 
 .card-login {
   height: relative;
-  width: 40%;
+  width: 450px;
   margin: auto;
   border-radius: 12px;
   background: #227c9d;
@@ -163,7 +163,7 @@ p {
 .card-login .button {
   color: #fef9ef;
   background-color: #fe6d73;
-  margin: 52px 0 1rem 0;
+  margin: 52px 0 4rem 0;
   border: none;
   cursor: pointer;
   font-size: 20px;

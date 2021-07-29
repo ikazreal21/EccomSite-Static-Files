@@ -162,7 +162,7 @@ p {
   color: black;
 }
 
-.card-login a{
+.card-login a {
   color: $accent3;
   text-decoration: underline;
 }
@@ -184,8 +184,16 @@ p {
   margin: auto;
 }
 
+//Register Page
+.register-input {
+  width: 80%;
+  margin: auto;
+}
+
 .username input[type="text"],
-.password input[type="password"] {
+.password input[type="password"],
+.email input[type="email"],
+.fullname input[type="text"] {
   height: 35px;
   border-radius: 5px;
   border: 0;
@@ -196,17 +204,39 @@ p {
 }
 
 .username label,
-.password label {
+.password label,
+.email label,
+.fullname label {
   color: $accent2;
   padding: 1rem 0 1rem 0;
   text-align: left;
 }
 
 .username,
-.password {
+.password,
+.email,
+.fullname {
   display: flex;
   flex-direction: column;
 }
+
+.card-login .button-register {
+  color: $primary2;
+  background-color: $accent1;
+  margin: 52px 1rem 4rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 124px;
+}
+
+.card-wrapper-register {
+  margin: 2rem 0 4rem 0;
+}
+// ----------------------------- //
+
 .card-wrapper {
   margin-top: 6rem;
 }

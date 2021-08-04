@@ -237,6 +237,104 @@ p {
 }
 // ----------------------------- //
 
+// Product Page
+
+.product-page {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.sidebar {
+  text-align: center;
+}
+
+.sidebar .combo{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.combo select {
+  color: $primary1;
+  background-color: $primary2;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid $primary1;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sidebar .button {
+  color: $primary2;
+  background-color: $accent1;
+  margin: 30px 0 4rem 0rem;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0.4rem;
+  border-radius: 5px;
+  width: 100px;
+}
+
+
+.products {
+  flex: 1;
+  margin-left: 2rem;
+  display: flex;
+  // flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.products img {
+  height: 200px;
+  width: 230px;
+}
+
+.products h3{
+  width: 230px;
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+
+.item {
+  margin: 1rem;
+}
+
+.cto {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buy {
+  background-color: $accent1;
+}
+
+.detail{
+  background-color: $secondary;
+}
+
+.buy,
+.detail {
+  color:  $primary2;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem; 
+  border-radius: 5px;
+}
+
+.combo .button:hover,
+.buy:hover,
+.detail:hover {
+  opacity: 0.8;
+  color: black;
+}
+
+// ----------------------------- //
+
 .card-wrapper {
   margin-top: 6rem;
 }

@@ -1,5 +1,5 @@
 // $primary1: #fef9ef;
-// // $primary2: #5e6472;
+// $primary2: #5e6472;
 // $secondary: #ffcb77;
 // $accent1: #fe6d73;
 // $accent2: #227c9d;
@@ -248,7 +248,7 @@ p {
   text-align: center;
 }
 
-.sidebar .combo{
+.sidebar .combo {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
@@ -277,7 +277,6 @@ p {
   width: 100px;
 }
 
-
 .products {
   flex: 1;
   margin-left: 2rem;
@@ -292,7 +291,7 @@ p {
   width: 230px;
 }
 
-.products h3{
+.products h3 {
   width: 230px;
   font-weight: 300;
   font-size: 15px;
@@ -313,22 +312,95 @@ p {
   background-color: $accent1;
 }
 
-.detail{
+.detail {
   background-color: $secondary;
 }
 
 .buy,
 .detail {
-  color:  $primary2;
+  color: $primary2;
   font-size: 20px;
   font-weight: 500;
-  padding: 0.5rem 1.5rem; 
+  padding: 0.5rem 1.5rem;
   border-radius: 5px;
 }
 
 .combo .button:hover,
 .buy:hover,
 .detail:hover {
+  opacity: 0.8;
+  color: black;
+}
+
+// ----------------------------- //
+
+// Details Page
+.content {
+  margin-top: 2rem;
+}
+
+.content .top {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.top .img-contain {
+  height: 400px;
+  width: 550px;
+}
+
+.top img {
+  height: 100%;
+  width: 100%;
+}
+
+.details h2 {
+  margin-top: 2rem;
+}
+
+.details {
+  color: $primary1;
+}
+
+.details h4{
+  color: $accent3;
+}
+
+.bot {
+  margin: 4rem 2rem;
+}
+
+.bot h3{
+  color: $secondary;
+}
+
+.bot p{
+  color: $primary1;
+}
+
+.cto-detail {
+  margin-bottom: 3rem;
+}
+
+.cto-detail .button {
+  margin: 2rem;
+  padding: 0.9rem;
+  border-radius: 5px;
+  color: $primary2;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.cto-detail .order {
+  background-color: $accent1;
+}
+
+.cto-detail .more {
+  background-color: $secondary;
+}
+
+.order:hover,
+.more:hover {
   opacity: 0.8;
   color: black;
 }
